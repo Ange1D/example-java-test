@@ -2,6 +2,7 @@
 name: Integracion Continua
 
 # Los pasos para ejecutar el pipeline
+
 jobs:
   build-test:
     runs-on: ubuntu-latest
@@ -20,6 +21,7 @@ jobs:
         run: ./gradlew test --no-daemon
 
 # Ejecutar el pipeline en cada push sobre la rama "main"
+
 on:
   push:
     branches:
